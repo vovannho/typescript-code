@@ -1,3 +1,4 @@
+import { Footer } from '../components/Footer';
 import { Header } from '../components/Header'
 import developerProfile from '../image/meeting.jpg';
 import {FaFacebook,FaPhoneSquareAlt ,FaMapMarkerAlt } from "react-icons/fa";
@@ -76,6 +77,7 @@ const Contact = [
                 </div>
             </div>
         </div>
+        <Footer/>
     </div>
   )
 }

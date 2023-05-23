@@ -1,7 +1,7 @@
 
 export const Footer = () => {
   return (
-    <div className='block md:flex text-center justify-between border-t-2 pt-6 text-lg'>
+    <div className='block md:flex text-center justify-between border-t-2 mt-10 pt-10 text-lg'>
         <div>
             2023 © All Rights Reserved.
         </div>

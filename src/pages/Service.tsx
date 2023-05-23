@@ -5,6 +5,7 @@ import landingImg from '../image/service3.jpg';
 import appImg from '../image/appmobile.jpg';
 import { Button } from '../components/Button';
 import {FaPhoneSquareAlt} from 'react-icons/fa'
+import { Footer } from '../components/Footer';
 
 const Service = () => {
   const Services = [
@@ -59,6 +60,7 @@ const Service = () => {
                     )})
                     }
         </ul>
+        <Footer/>
     </div>
   )
 }
