@@ -5,6 +5,7 @@ import { Button } from "../components/Button";
 import { FaRegEdit, FaCheckCircle } from "react-icons/fa";
 import { RiContactsLine } from "react-icons/ri";
 import { Footer } from "../components/Footer";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -45,17 +46,25 @@ const Home = () => {
               </ul>
 
               <div className="flex space-x-4 mt-6 text-lg lg:text-xl">
-                <Button size="small" text="Resume" icon ={<FaRegEdit />} />
-                <Button
-                  size="small"
-                  variant="outline"
-                  text="Contact"
-                  icon={<RiContactsLine />}
-                />
+                <Link to="/Service">
+                  <Button 
+                    size="small" 
+                    text="Service"
+                    icon ={<FaRegEdit />} 
+                    />
+                </Link>
+                <Link to="/About">
+                  <Button
+                    size="small"
+                    variant="outline"
+                    text="Contact"
+                    icon={<RiContactsLine />}
+                    />
+                </Link>
               </div>
             </div>
             <div className="w-2/5">
-              <img src={lamp} alt="" />
+              <img src={lamp} alt="lampimg" />
             </div>
           </div>
         </div>

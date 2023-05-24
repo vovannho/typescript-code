@@ -1,3 +1,4 @@
+import { Faq } from '../components/Faq';
 import { Footer } from '../components/Footer';
 import { Header } from '../components/Header'
 import developerProfile from '../image/meeting.jpg';
@@ -77,6 +78,7 @@ const Contact = [
                 </div>
             </div>
         </div>
+        <Faq/>
         <Footer/>
     </div>
   )

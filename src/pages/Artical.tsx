@@ -218,17 +218,17 @@ const Artical = () => {
   const npage = Math.ceil(ListArtical.length / recordsPerPage);
   const numbers = [...Array(npage + 1).keys()].slice(1);
   function nextPage(){
-    if(currentPage !== 1){
+    if(currentPage >=1){
       setCurrentPage(currentPage+1)
     }
 
   }
-  function changCPage(id:number){
-    setCurrentPage(id+1)
+  function changePage(id:number){
+    setCurrentPage(id)
 
   }
   function prePage(){
-    if (currentPage!== npage){
+    if (currentPage <= npage){
       setCurrentPage(currentPage-1)
     }
 
@@ -265,8 +265,8 @@ const Artical = () => {
         })}
       </ul>
       <nav className="">
-        <ul className="flex items-center  text-center space-x-3 mt-10 ">
-          <li className="">
+        <ul className="flex items-center justify-center space-x-3 mt-10  w-full">
+          <li className="cursor-pointer">
             <a onClick={()=> prePage()}>
               Prev
             </a>
@@ -274,11 +274,11 @@ const Artical = () => {
           {
             numbers.map((n,i)=> (
               <li className={`hover:bg-blue-400 ${currentPage === n ? 'bg-blue-400' :  ''}`}  key={i} >
-                <a className="p-3" onClick={() => changCPage(i)}>{n}</a>
+                <a className="p-3" onClick={() => changePage(i+1)}>{n}</a>
               </li>
             ))
           }
-          <li>
+          <li className="cursor-pointer">
             <a onClick={()=>nextPage()}>
               Next
             </a>

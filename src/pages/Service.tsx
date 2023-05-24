@@ -51,9 +51,9 @@ const Service = () => {
                             <p className='text-lg font-light'>
                               {item.content}
                             </p>
-                            <div className='float-right items-end mt-3'>
+                            <a href="tel:+84814213949" className='float-right items-end mt-3'>
                               <Button text='Call Now' variant='green' size='small' icon={<FaPhoneSquareAlt/>} />
-                            </div>
+                            </a>
                           </div>
 
                         </li>

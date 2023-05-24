@@ -43,7 +43,7 @@ const icons: {
   {
     icon: FaGoogle,
     color: "text-red-500",
-    link: "",
+    link: "https://mail.google.com/mail/u/0/#inbox",
   },
   {
     icon: FaGithub,
@@ -53,7 +53,7 @@ const icons: {
   {
     icon: FaTelegram,
     color: "text-blue-500",
-    link: '',
+    link: 'https://t.me/mwebsite123',
   },
 ];
 
