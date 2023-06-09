@@ -4,6 +4,7 @@ import { Header } from '../components/Header'
 import developerProfile from '../image/meeting.jpg';
 import {FaFacebook,FaPhoneSquareAlt ,FaMapMarkerAlt } from "react-icons/fa";
 import {IoEarth} from "react-icons/io5";
+import CountUp from 'react-countup';
 const About = () => {
     
 const Contact = [
@@ -71,9 +72,21 @@ const Contact = [
             <div className='w-full items-center justify-center '>
                 <img className=' rounded-xl border-solid p-2 border' src={developerProfile} alt="" />
                 <div className='sm:grid  grid-cols-3 gap-3 my-6'>
-                    <div className='text-center text-lg font-medium'><p className=' text-6xl font-semibold mb-2 text-blue-500'>+50</p>Projects Completed</div>
-                    <div className='text-center text-lg font-medium'><p className=' text-6xl font-semibold mb-2 text-blue-500'>+45</p>Satisfied Clients</div>
-                    <div className='text-center text-lg font-medium'><p className=' text-6xl font-semibold mb-2 text-blue-500'>+4</p>Years Of Experience
+                    <div className='text-center text-lg font-medium'>
+                      <p className=' text-6xl font-semibold mb-2 text-blue-500'>
+                        <CountUp start={40} end={50} duration={3}/>
+                        <span>+</span>
+                      </p>Projects Completed</div>
+                    <div className='text-center text-lg font-medium'>
+                      <p className=' text-6xl font-semibold mb-2 text-blue-500'>
+                      <CountUp start={35} end={45} duration={3}/>
+                        <span>+</span>
+                      </p>Satisfied Clients</div>
+                    <div className='text-center text-lg font-medium'>
+                      <p className=' text-6xl font-semibold mb-2 text-blue-500'>
+                      <CountUp start={1} end={4} duration={3}/>
+                        <span>+</span>
+                      </p>Years Of Experience
                     </div>
                 </div>
             </div>
