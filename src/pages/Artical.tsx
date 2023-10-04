@@ -11,7 +11,7 @@ const Artical = () => {
     {
       id:"1",
       imgSrc: actical1,
-      title: "E-commerce website design",
+      title: "Thiết kế website thương mại điện tử",
       create_at: "Mar 16, 2020",
       topic: "Maketting",
       link: "",
@@ -236,8 +236,8 @@ const Artical = () => {
   return (
     <div>
       <Header />
-      <div className="xl:text-6xl lg:text-5xl text-4xl text-center mt-[60px]">
-        From the Blog
+      <div className="xl:text-5xl lg:text-4xl text-4xl text-center mt-[60px]">
+        Blog nổi bật
       </div>
       <ul className="grid-cols-4 grid gap-4 mt-[60px] ">
         {records.map((item, index) => {
@@ -254,7 +254,7 @@ const Artical = () => {
                   <p className="text-xl font-medium">{item.title}</p>
                   <div className="flex justify-between">
                     <p>{item.create_at}</p>
-                    <p className="bg-blue-500 px-2 py-0.5 rounded-xl">
+                    <p className="bg-blue-600 px-2 py-0.5 rounded-xl">
                       {item.topic}
                     </p>
                   </div>

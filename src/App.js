@@ -10,9 +10,9 @@ function App() {
     <div className="w-full xl:px-[120px] px-[20px] py-[40px] bg-[#ffffff] ">
       <Routes>
         <Route path="/" element={ <Home/> } />
-        <Route path="/About" element={ <About/> } />
-        <Route path="/Service" element={ <Service/> } />
-        <Route path="/Artical" element={ <Artical/> } />
+        <Route path="/lien-he" element={ <About/> } />
+        <Route path="/thiet-ke" element={ <Service/> } />
+        <Route path="/blog" element={ <Artical/> } />
       </Routes>
      
     </div>

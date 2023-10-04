@@ -12,30 +12,30 @@ const Service = () => {
   
     {
       imgSrc: ecommerceImg,
-      title: 'E-commerce website design',
-      content: 'Design a multi-product sales page, focusing on the aesthetics of the product line, user-friendly and compatible on many devices.  '
+      title: 'Thiết kế website thương mại điện tử',
+      content: 'Thiết kế trang bán hàng đa sản phẩm, chú trọng tính thẩm mỹ của dòng sản phẩm, thân thiện với người dùng và tương thích trên nhiều thiết bị.  '
     },
     {
       imgSrc: companyImg,
-      title :'Company Introduction',
-      content: 'Design a website to introduce and promote the company"s brand in a simple, accessible way with information and services so that customers can contact them when needed.'
+      title :'Giới thiệu công ty',
+      content: 'Thiết kế website giới thiệu, quảng bá thương hiệu công ty một cách đơn giản, dễ tiếp cận với các thông tin, dịch vụ để khách hàng có thể liên hệ khi có nhu cầu.'
     },
     {
       imgSrc: appImg,
-      title :'Mobile app design',
-      content: 'App design is a great foundation for user experience. As the number of people accessing the internet by mobile is increasing exponentially. Then professional mobile application is the right hand to double revenue.'
+      title :'Thiết kế ứng dụng di động',
+      content: 'Khi số lượng người truy cập internet bằng điện thoại di động ngày càng tăng theo cấp số nhân. Khi đó ứng dụng di động chuyên nghiệp chính là cánh tay đắc lực để tăng gấp đôi doanh thu.'
     },
     {
       imgSrc: landingImg,
-      title :'Langding Page all fields',
+      title :'Thiết kế LangdingPage đa nghành ',
       content: 'In addition to sales purposes, Landing Page is also used for many other purposes in advertising and marketing such as promotional pages, gift giving, ebooks, events, marketing funnels...'
     },
   ]
   return (
     <div>
         <Header/>
-        <div className='xl:text-6xl lg:text-5xl text-4xl text-center mt-[60px]'>
-          Our service and Technology
+        <div className='xl:text-5xl lg:text-4xl text-4xl text-center mt-[60px]'>
+          Thiết kế Web/App, LangdingPage 
         </div>
         <ul className=' grid grid-cols-1 md:grid-cols-2 gap-6 mt-6'>
               {Services.map((item,index)=> {
@@ -45,7 +45,7 @@ const Service = () => {
                             <img src={item.imgSrc} alt=''/> 
                           </div>
                           <div>
-                            <p className='text-2xl font-medium'>
+                            <p className='text-xl font-medium mb-2'>
                               {item.title}
                             </p>
                             <p className='text-lg font-light'>

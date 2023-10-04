@@ -22,7 +22,7 @@ const Contact = [
     {
         icon: IoEarth,
         color : 'text-blue-700',
-        text : 'Mwebsite.net'
+        text : 'AgencyM.net'
       },
     {
       icon: FaMapMarkerAlt,
@@ -35,24 +35,18 @@ const Contact = [
   return (
     <div>
         <Header/>
-        <div className='xl:text-6xl lg:text-5xl text-4xl text-center mt-[60px]'>
-            About for Mwebsite
+        <div className='xl:text-5xl lg:text-4xl text-4xl text-center mt-[60px]'>
+            Về chúng tôi
         </div>
         <div className='lg:grid grid-cols-2 gap-6 mt-6'>
             <div>
-                <h3 className='text-2xl font-medium'>BIOGRAPHY</h3>
+                <h3 className='text-2xl font-medium'>Sứ mệnh và Lời cảm ơn  </h3>
                 <p className='text-lg mt-3 font-light'>
-                    Hi, I'm Mwebsite.
-
-                    <br/>
-                    Mwebsite  would like to sincerely thank customers who have been accompanying us during the past time.
-
-                    <br/>
-                    Come to us, customers will experience the best service, the most perfect with the most competitive price. You can rest assured with our 24/7 service. With the mission of always putting prestige first, we will bring to customers the best that we can do.
-
-                    <br/>
-                    As a agency in website design and advertising services, we always offer quick - effective - affordable solutions.
-                    <br/>
+                Với sứ mệnh luôn đặt uy tín lên hàng đầu, chúng tôi sẽ mang đến cho khách hàng những gì tốt nhất mà chúng tôi có thể làm được. 
+                <br/>
+                Là đơn vị cung cấp dịch vụ thiết kế website/app và quảng cáo, chúng tôi luôn đưa ra các giải pháp nhanh chóng – hiệu quả – giá cả phải chăng.
+                <br/>
+                AgencyM xin chân thành cảm ơn quý khách hàng đã đồng hành cùng chúng tôi trong suốt thời gian qua và sẽ tiếp tục hỗ trợ bạn một cách chu đáo nhất có thể !
                 </p>
                 <br></br>
                 <h3 className='text-2xl font-medium'>Contact Us :</h3>
@@ -73,20 +67,22 @@ const Contact = [
                 <img className=' rounded-xl border-solid p-2 border' src={developerProfile} alt="" />
                 <div className='sm:grid  grid-cols-3 gap-3 my-6'>
                     <div className='text-center text-lg font-medium'>
-                      <p className=' text-6xl font-semibold mb-2 text-blue-500'>
-                        <CountUp start={40} end={50} duration={3}/>
+                      <p className=' text-6xl font-semibold mb-2 text-blue-600'>
+                        <CountUp start={40} end={100} duration={3}/>
                         <span>+</span>
-                      </p>Projects Completed</div>
+                      </p>Dự án đã hoàn thành</div>
                     <div className='text-center text-lg font-medium'>
-                      <p className=' text-6xl font-semibold mb-2 text-blue-500'>
-                      <CountUp start={35} end={45} duration={3}/>
+                      <p className=' text-6xl font-semibold mb-2 text-blue-600'>
+                      <CountUp start={35} end={99} duration={3}/>
                         <span>+</span>
-                      </p>Satisfied Clients</div>
+                      </p>
+                      Khách hàng hài lòng
+</div>
                     <div className='text-center text-lg font-medium'>
-                      <p className=' text-6xl font-semibold mb-2 text-blue-500'>
-                      <CountUp start={1} end={4} duration={3}/>
+                      <p className=' text-6xl font-semibold mb-2 text-blue-600'>
+                      <CountUp start={1} end={5} duration={3}/>
                         <span>+</span>
-                      </p>Years Of Experience
+                      </p>Số năm kinh nghiệm
                     </div>
                 </div>
             </div>

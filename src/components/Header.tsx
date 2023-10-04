@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { LinkProps, NavLink } from "react-router-dom";
-import logo from "../image/logo.png";
+import logo from "../image/logom.png";
 import { FaFacebook, FaGoogle, FaGithub, FaTelegram } from "react-icons/fa";
 import { BsList } from "react-icons/bs";
 import { AiOutlineClose } from "react-icons/ai";
@@ -10,22 +10,22 @@ import { IconType } from "react-icons/lib";
 
 const navLink = [
   {
-    name: "Home",
+    name: "Trang chủ",
     link: "/",
   },
 
   {
-    name: "Service",
-    link: "/Service",
+    name: "Thiết kế ",
+    link: "/thiet-ke",
   },
 
   {
-    name: "Artical",
-    link: "/Artical",
+    name: "Blog",
+    link: "/blog",
   },
   {
-    name: "About",
-    link: "/About",
+    name: "Liên hệ",
+    link: "/lien-he",
   },
 ];
 
@@ -52,7 +52,7 @@ const icons: {
   },
   {
     icon: FaTelegram,
-    color: "text-blue-500",
+    color: "text-blue-600",
     link: 'https://t.me/mwebsite123',
   },
 ];
@@ -65,7 +65,7 @@ export const Header = () => {
       <div className="absolute  text-black top-7 left-1/2 transform -translate-x-1/2 -translate-y-1/2 ">
         <Link to="/">
         <img
-          className="w-[100px] hover:w-[120px] duration-100"
+          className="w-[120px] hover:w-[130px] duration-100"
           src={logo}
           alt="logo"
         />
@@ -90,8 +90,8 @@ export const Header = () => {
               <NavLink
                 className={({ isActive }) =>
                   isActive
-                    ? "border-b-2 border-blue-500 font-bold text-blue-500"
-                    : "transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-blue-500 duration-200 "
+                    ? "border-b-2 border-blue-600 font-bold text-blue-600"
+                    : "transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-blue-600 duration-200 "
                 }
                 to={item.link}
                 key={index}
@@ -107,7 +107,7 @@ export const Header = () => {
             return (
               <Link to={item.link}>
                 <li
-                  className=" transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-blue-500 duration-200   "
+                  className=" transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-blue-600 duration-200   "
                   key={index}
                 >
                   <item.icon className={`${item.color} w-[30px] h-[30px]`} />
@@ -128,7 +128,7 @@ export const Header = () => {
                   className={({ isActive }) =>
                     isActive
                       ? "border-b-2 border-black font-bold text-[#000]"
-                      : "transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-blue-500 duration-200 "
+                      : "transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-blue-600 duration-200 "
                   }
                   to={item.link}
                   key={index}
@@ -143,7 +143,7 @@ export const Header = () => {
               return (
                 <Link to={`${item.link}`}>
                   <li
-                    className=" transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-blue-500 duration-200   "
+                    className=" transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-blue-600 duration-200   "
                     key={index}
                   >
                     <item.icon className={`${item.color} w-[30px] h-[30px]`} />

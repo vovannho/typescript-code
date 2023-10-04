@@ -16,40 +16,35 @@ const Home = () => {
           <img className="w-full" src={developerImg} alt="" />
         </div>
         <div className="w-full md:w-1/2">
-          <h1 className="xl:text-6xl lg:text-5xl text-4xl font-semibold mt-[50px]">
+          <h1 className="xl:text-5xl lg:text-5xl text-4xl font-semibold mt-[50px]">
             Website/App Design & Maketing Online
           </h1>
           <div className="flex my-[30px]">
             <div className="md:w-3/5">
               <h3 className="text-xl">
-                We specialize in custom website design and provide effective
-                advertising solutions for individuals and businesses in all
-                fields.
+              Chúng tôi chuyên thiết kế theo yêu cầu và cung cấp các giải pháp quảng cáo hiệu quả cho các cá nhân, doanh nghiệp trong mọi lĩnh vực.
               </h3>
               <ul className="mt-[20px] text-blue-600 space-y-2">
                 <li className="flex items-center gap-x-4 text-xl">
-                  <FaCheckCircle className="text-blue-500" />
-                  <p>Custom logo design</p>
+                  <FaCheckCircle className="text-blue-600 flex-shrink-0" />
+                  <p>Thiết kế bộ nhận diện thương hiệu </p>
                 </li>
                 <li className="flex items-center gap-x-4 text-xl">
-                  <FaCheckCircle className="text-blue-500" />
-                  <p>Website design for all fields</p>
+                  <FaCheckCircle className="text-blue-600 flex-shrink-0" />
+                  <p>Thiết kế Website/App Mobile và LangdingPage</p>
                 </li>
                 <li className="flex items-center gap-x-4 text-xl">
-                  <FaCheckCircle className="text-blue-500" />
-                  <p>Write SEO content & SEO website</p>
+                  <FaCheckCircle className="text-blue-600 flex-shrink-0" />
+                  <p>Chạy quảng cáo mọi nghành hàng </p>
                 </li>
-                <li className="flex items-center gap-x-4 text-xl">
-                  <FaCheckCircle className="text-blue-500" />
-                  <p>Google, facebook ads in all fields</p>
-                </li>
+                
               </ul>
 
-              <div className="flex space-x-4 mt-6 text-lg lg:text-xl">
-                <Link to="/Service">
+              {/* <div className="flex space-x-4 mt-6 text-lg lg:text-xl">
+                <Link to="/thiet-ke">
                   <Button 
                     size="small" 
-                    text="Service"
+                    text="Thiết kế"
                     icon ={<FaRegEdit />} 
                     />
                 </Link>
@@ -61,7 +56,7 @@ const Home = () => {
                     icon={<RiContactsLine />}
                     />
                 </Link>
-              </div>
+              </div> */}
             </div>
             <div className="w-2/5">
               <img src={lamp} alt="lampimg" />
